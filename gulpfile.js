@@ -29,7 +29,8 @@ export function js() {
     return src(paths.js)
       .pipe(terser())
       .pipe(sourcemaps.write('.'))
-      .pipe(dest('public/build/js'));
+      .pipe(dest('./public/build/js'))
+      done();
 }
 
 export async function imagenes(done) {

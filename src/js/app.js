@@ -115,7 +115,7 @@ function paginaSiguiente() {
 async function consultarAPI() {
 
     try {
-        const url = '/public/api/servicios';
+        const url = `${location.origin}/public/api/servicios`;
         const resultado = await fetch(url);
         const servicios = await resultado.json();
         mostrarServicios(servicios);
