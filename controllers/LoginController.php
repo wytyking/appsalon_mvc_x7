@@ -41,7 +41,7 @@ class LoginController {
                         } else {
                             header('Location: /public/cita');
                         }
-
+                        exit();
                     }
                 } else {
                     Usuario::setAlerta('error', 'Usuario no registrado');
